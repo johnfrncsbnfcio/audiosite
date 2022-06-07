@@ -1,0 +1,155 @@
+/* from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500&family=Oswald:wght@200;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../resources/img-background.jpeg');
+    background-position: center;
+    background-size: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    color: #fff;
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-block {
+    width: 50%;
+    height: 100vh;
+    text-align: center;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section {
+    flex-grow: 1;
+}
+
+h1,
+section,
+footer {
+    flex-shrink: 0;
+}
+
+h1 {
+    margin-top: 2.125rem;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    font-size: 4rem;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.55);
+    color: white;
+    cursor: default;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: 1.2rem;
+}
+
+button {
+    background: none;
+    padding: 0;
+    margin: 0;
+    border: none;
+    cursor: pointer;
+}
+
+#volume {
+    background: none;
+}
+
+input[type=range] {
+    cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+    background-color: white;
+    border: 1px solid grey;
+}
+
+input[type="range"]::-moz-range-progress {
+    background-color: #5e5e5e;
+}
+
+input[type=range]::-moz-range-thumb {
+    border: none;
+    background: #5e5e5e;
+    cursor: pointer;
+}
+
+
+/* Play/Pause Button Icon Class */
+.fa-regular {
+    color: white;
+    font-size: 6.25rem;
+}
+
+.audio-player {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.audio-player > p {
+    width: 50%;
+    font-weight: 300;
+    color: white;
+    line-height: 1.55rem;
+    text-shadow: 0px 0px 15px rgba(74, 224, 106, 0.9);
+}
+
+.volume-controller {
+    margin: 1rem 0;
+}
+
+.social-account {
+    display: flex;
+    flex-direction: column;
+    width: 15rem;
+    margin-top: 1rem;
+}
+
+.social-account>p {
+    font-size: .9rem;
+    color: rgba(255, 255, 255, .75);
+}
+
+.social-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .7rem;
+}
+
+.social-item a {
+    font-size: 1.8rem;
+    margin: 0 .8rem;
+    color: white;
+}
+
+footer > p {
+    font-size: .8rem;
+    margin-bottom: .3rem;
+}
+
+footer > p > a {
+    color: rgb(1, 120, 255);
+    text-decoration: none;
+}
